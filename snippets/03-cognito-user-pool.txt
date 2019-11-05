@@ -1,0 +1,17 @@
+CognitoUserPool:
+      Type: AWS::Cognito::UserPool
+      Properties:
+        UserPoolName: NodeSinglePageTest
+        AutoVerifiedAttributes: 
+          - email
+    CognitoUserPoolClient:
+      Type: AWS::Cognito::UserPoolClient
+      Properties:
+        ClientName: NodeSinglePageApp
+        GenerateSecret: false
+        UserPoolId:
+          Ref: "CognitoUserPool"
+
+
+
+https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-identity-pools.html
