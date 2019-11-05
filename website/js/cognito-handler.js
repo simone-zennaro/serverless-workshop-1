@@ -101,6 +101,10 @@ customEvents.on('login', (authenticationData) => {
 
     });
 });
+
+customEvents.on('login_successful', ()=>{
+    alert('User logged in')
+});
 /* GET CURRENT USER (in browser session)
 
 var cognitoUser = userPool.getCurrentUser();
