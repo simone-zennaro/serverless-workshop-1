@@ -1,3 +1,5 @@
+resources:
+  Resources:
     CognitoUserPool:
       Type: AWS::Cognito::UserPool
       Properties:
