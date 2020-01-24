@@ -1,4 +1,4 @@
-CognitoAuthorizer:
+    CognitoAuthorizer:
       Type: AWS::ApiGateway::Authorizer
       Properties:
         Name: CognitoAuthorizer

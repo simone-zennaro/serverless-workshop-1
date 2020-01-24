@@ -5,7 +5,6 @@ functions:
       - http:
           path: openapi
           method: post
-		  cors: true
 
 
 https://serverless.com/framework/docs/providers/aws/events/
