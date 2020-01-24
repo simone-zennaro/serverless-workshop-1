@@ -23,8 +23,6 @@ The stack will deploy:
 - A Lambda which responds to the /open-api path
 - A Lambda which responds to the /private-api
 
-TODO: https://dillinger.io/
-
 # How to deploy through Bitbucket pipeline
 
 - Clone this repo to a private repository in your Bitbucket account
