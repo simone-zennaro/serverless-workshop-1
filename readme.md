@@ -3,12 +3,15 @@
 [![Serverless Barcelona Meetup](images/serverless-barcelona-meetup-logo.png)](https://www.meetup.com/it-IT/Serverless-Barcelona/)
 
 This PoC is part of the Serverless Workshop organized by the [Serverless Barcelona Meetup][meetup]. 
-It's implemented with the [Serverless Framework][serverless] and not intended for production environments and the purpose of this workshop is to explain how to deploy a typical use case adopting the serverless services that AWS offers. 
+It is implemented with the [Serverless Framework][serverless] and not meant for production environments.
+The purpose of this workshop is to explain how to deploy a typical use case adopting the serverless services that AWS offers. 
 
-# What it contains
+# What contains?
 
-  - A serverless stack deployable in a AWS account
-  - A Bitbucket pipeline to deploy the stack
+  - A serverless stack deployable in an AWS account.
+  - A Bitbucket pipeline to deploy the stack.
+  - A Dockerfile used by the Bitbucket pipeline.
+  - The website code.
 
 
 # Stack details
@@ -18,14 +21,14 @@ It's implemented with the [Serverless Framework][serverless] and not intended fo
 The stack will deploy:
 
 - A website bucket where to store static HTML and JS.
-- An Api-Gateway endpoint with two path (/private-api /open-api )
-- A Cognito User Pool where to create users and to use with the Api-Gateway Authorizer to protect the api calls that arrive to the /private-api
+- An Api-Gateway endpoint with two paths (/private-api /open-api )
+- A Cognito User Pool where to create users and to use with the Api-Gateway Authorizer to protect the api calls which arrive to the /private-api
 - A Lambda which responds to the /open-api path
 - A Lambda which responds to the /private-api
 
 # How to deploy through Bitbucket pipeline
 
-- Clone this repo to a private repository in your Bitbucket account
+- Clone this repo to a private repository in your Bitbucket account.
 - Enable the pipeline in your bitbucket repository:
 ![Bitbucket](images/bitbucket-pipeline.png)
 - Configure the repository variables:
@@ -45,7 +48,7 @@ The stack will deploy:
 ![Bitbucket](images/authenticated.png)
 
 # Notes
-You have to follow the previous steps in the exact order, if something goes wrong and you want to recreate the user with the same email, you must go to the Cognito User Pool console --> Users and Groups, and disable/delete the user.
+All the steps must be followed in the correct order, in case something goes wrong and you want to recreate a user with the same email, you must go to the Cognito User Pool console --> Users and Groups, and disable/delete the user.
 We know, the UX is not the best one, but the PoC is built to start with the serverless framework, Cognito, Api-Gateway, Authorizer and Lambda.
 
 
