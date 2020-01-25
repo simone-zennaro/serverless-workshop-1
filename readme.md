@@ -39,12 +39,14 @@ The stack will deploy:
 # How to try the stack
 
 - Open the website bucket Url in your browser (you can find it in the pipeline output or in the Cloudformation stack output)
+
 ![Bitbucket](images/register.png)
 - Try to click on the CALL AUTHENTICATED button, you will receive a 401 response (Unauthorized)
 - Register a new user with a valid email address
 - Confirm the registration by inserting the code that you will receive by mail
 - Sign in
 - Try the CALL AUTHENTICATED button again, you will receive a message like that:
+
 ![Bitbucket](images/authenticated.png)
 
 # Notes
