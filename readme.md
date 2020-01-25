@@ -36,6 +36,19 @@ The stack will deploy:
 - Change the service name in the serverless.yml file (fill it with another one, ie: serverless-workshop-YOUR_AWS_ACCOUNTID)
 - Push the changes to the master branch to trigger the pipeline and deploy the stack
 
+# How to deploy from your laptop
+
+### Requirements:
+- NodeJS
+- AWS CLI
+- Serverless Framework (npm install serverless -g)
+
+### Deploy
+
+```sh
+$ npm run deploy
+```
+
 # How to try the stack
 
 - Open the website bucket Url in your browser (you can find it in the pipeline output or in the Cloudformation stack output)
