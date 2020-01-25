@@ -4,6 +4,7 @@ frameworkVersion: ">=1.2.0 <2.0.0"
 
 custom:
   s3Bucket: ${self:service}
+  streamBucket: !Sub "${self:service}-${AWS::AccountId}"
 
 provider:
   name: aws
